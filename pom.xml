@@ -19,9 +19,16 @@
 	</properties>
 
 	<modules>
+		<module>service-registry</module>
+		<module>config-server</module>
 		<module>auth-service</module>
 		<module>auth-service-client</module>
 		<module>order-service</module>
 		<module>order-service-client</module>
+		<module>warehouse-service</module>
+		<module>warehouse-service-client</module>
+		<module>retail-service</module>
+		<module>retail-service-client</module>
+		<module>api-gateway</module>
 	</modules>
 </project>

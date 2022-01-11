@@ -31,7 +31,7 @@ public class Application {
         definitions.stream().filter(service -> service.matches(".*-service")).forEach(service -> {
             var name = service.replaceAll("-service", "");
 
-            groups.add(GroupedOpenApi.builder().pathsToMatch("/" + name + "/**").setGroup(name).build());
+            groups.add(GroupedOpenApi.builder().pathsToMatch("/" + name + "/**").group(name).build());
         });
         return groups;
     }
